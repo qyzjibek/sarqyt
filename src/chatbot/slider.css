@@ -1,0 +1,31 @@
+.slider-container .cards-slider .slick-slide {
+    transition: transform 0.3s ease;
+    height: 248px; /* Adjust the height as needed */
+    width: 423px !important;
+  }
+
+  .slider-container .cards-slider {
+    height: 248px;
+  }
+  
+  .slider-container .cards-slider .slick-center {
+    transform: scale(1.05); /* Zooms in the center slide */
+    z-index: 10; /* Ensures it's above other slides */
+  }
+  
+  .slider-container .cards-slider .slick-slide.slick-active {
+    opacity: 1;
+  }
+  
+  .slider-container .cards-slider .slick-slide {
+    opacity: 0.5; /* Other slides are less opaque */
+  }
+  
+  
+  /* Make sure the slide is a flex container to center the content */
+  .slider-container .cards-slider .slick-slide > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }

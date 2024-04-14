@@ -1,0 +1,74 @@
+/* NavBar.css */
+.navbar {
+    position: fixed; /* or 'absolute' depending on your needs */
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 100px; /* Adjust padding as needed */
+    color: white;
+    gap: 32px;
+    height: 49px;
+    background: transparent; /* Sets the background of the navbar to be transparent */
+  }
+  
+  .logo {
+    font-size: 24px; /* Adjust size as needed */
+    font-weight: bold;
+    /* Include any specific font-family if necessary */
+  }
+  
+  .nav-items a {
+    margin: 0 15px; /* Adjust spacing between items */
+    color: white; /* Text color */
+    text-decoration: none;
+    font-size: 18px; /* Adjust size as needed */
+    transition: color 0.3s ease;
+    line-height: 50px;
+    padding: 8px;
+  }
+  
+  .nav-items a:hover {
+    color: #ccc; /* Hover color */
+  }
+  
+  .get-started {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #ff6f00; /* Adjust button background color */
+    color: white;
+    font-size: 16px; /* Adjust size as needed */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 148px;
+    height: 41px;
+    background-image: url('../assets/galaxy_logo.png');
+    background-size: cover;
+    filter: blur(0.3px); /* Adjust the px value to increase or decrease the amount of blur */
+    z-index: -1;
+  }
+  
+  .get-started:hover {
+    background-color: #e65c00; /* Hover background color */
+  }
+  
+  .topbar-active {
+    border-radius: 100px;
+    border: 1px solid var(--stroke, hsla(0, 0%, 100%, .2));
+    background: rgba(0, 0, 0, .1);
+    box-shadow: 0 0 20px 0 hsla(0,0%,100%,.1);
+  }
+
+  .get-started-o {
+    width: 148px;
+    height: 41px;
+    color: white;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    border-radius: 41px;
+  }

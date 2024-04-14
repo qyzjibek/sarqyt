@@ -1,0 +1,90 @@
+.card.rotated > .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.card.rotated > .back{ 
+    transform: perspective(600px) rotateY(0deg);
+}  
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* space between fields */
+    width: 300px; /* adjust width as necessary */
+    margin: auto; /* center the form on the page */
+    padding: 20px; /* padding around the form */
+    background-color: #f4f9f4; /* light green background for the form */
+    border-radius: 8px; /* rounded corners for the form */
+    box-shadow: 0 8px 16px rgba(0,128,0,0.2); 
+}
+
+.form-container input {
+    padding: 10px 15px; /* padding inside the input fields */
+    border: 2px solid #a9dca3; /* light green border */
+    border-radius: 5px; /* rounded corners for the inputs */
+    background-color: #e7f5e6; /* very light green background for the inputs */
+    outline: none; /* removes the default focus outline */
+    transition: all 0.3s ease; /* smooth transition for interactions */
+}
+
+.form-container input:focus {
+    border-color: #80c784; /* darker green border on focus */
+    box-shadow: 0 0 8px rgba(128,199,132,0.5); /* glow effect when focused */
+}
+
+.form-container input::placeholder {
+    color: #9dbc96; /* styled placeholder text */
+    font-style: italic; /* italicized placeholder */
+}
+
+.add-card-button {
+    padding: 12px 15px; /* matching padding to input fields */
+    border: none;
+    border-radius: 5px;
+    background-color: #35A700; /* matching button color to input focus color */
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-card-button:hover {
+    background-color: #66a06b; /* a darker green for hover effect */
+}
+
+.rccs {
+    margin: 30px auto;
+    perspective: 1000px;
+    width: 290px;
+}
+
+.user-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Creates two columns of equal width */
+    gap: 20px;
+}
+
+.form-container select {
+    padding: 10px 15px; /* same padding as the input fields */
+    border: 2px solid #a9dca3; /* same light green border as the input fields */
+    border-radius: 5px; /* same rounded corners as the input fields */
+    background-color: #e7f5e6; /* same very light green background as the input fields */
+    outline: none; /* removes the default focus outline */
+    transition: border-color 0.3s ease; /* smooth transition for interactions */
+    appearance: none; /* removes default system styles */
+    -webkit-appearance: none; /* specifically for iOS */
+    -moz-appearance: none; /* specifically for Firefox */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 4 5"><path fill="%2380c784" d="M2 0L0 2h4zm0 5L0 3h4z"/></svg>'); /* custom arrow icon */
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%; /* position the arrow icon */
+    color: #4d4d4d; /* color for the dropdown text */
+}
+
+.form-container select:focus {
+    border-color: #80c784; /* darker green border on focus */
+    box-shadow: 0 0 8px rgba(128,199,132,0.5); /* glow effect when focused */
+}
+
+.form-container select::-ms-expand {
+    display: none; /* removes the default arrow icon in IE */
+}

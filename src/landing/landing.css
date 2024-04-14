@@ -1,0 +1,190 @@
+  
+.login-register-buttons > button {
+    border-radius: 25px; /* This value can be increased for more rounding */
+    /* Other styles such as padding, background, border, etc., can also be adjusted here */
+  }
+  
+  
+  /* Ensure styles are applied on all states of the link */
+  .navbar-brand:hover, 
+  .navbar-brand:focus, 
+  .navbar-brand:active {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: start; /* Align items to the start of the container */
+    align-items: center;
+    background-color: #fff; /* Assuming white background */
+    padding: 10px 15px; /* Add padding to the container */
+    /* Add other styles like shadow, border-radius, etc., as needed */
+  }
+  
+  .navbar-brand {
+    margin-right: 15px; /* Space after logo */
+    color: black; /* If you want the brand to be black */
+    text-decoration: none; 
+    font-size: 1.5rem;
+    margin-right: 0; 
+    margin-right: 10px;
+
+  }
+  
+  .city-dropdown {
+    margin-right: auto; /* This will push everything else to the right */
+    /* If there is still too much space, you can set a specific margin */
+  }
+  
+  /* landing.css */
+
+.offer-section h2 {
+    color: #28a745; /* Green color for the heading */
+    font-size: 1.5rem; /* Adjust font-size as needed */
+  }
+  
+  .rounded-box {
+    border-color: #28a745; /* Green border color */
+  }
+  
+  /* Style adjustments for the input and button in the search panel */
+  .form-control.rounded-pill {
+    flex-grow: 1; /* Allow input to fill space */
+    border: 2px solid #28a745; /* Green border color for the input */
+    margin-top: 32px;
+    border-radius: 24px; /* Rounded borders for the input */
+  }
+  
+  .btn-success.rounded-pill {
+    color: #fff; /* White text color */
+    background-color: #28a745; /* Green background color */
+    border: none; /* No border */
+    margin-left: 14px; /* Space between input and button */
+    border-radius: 24px; /* Rounded borders for the button */
+  }
+  
+/* landing.css */
+
+.offer-container {
+    text-align: center;
+    margin-top: 32px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px; /* Adds space between buttons */
+    margin-bottom: 32px;
+  }
+  
+  .category-btn {
+    background-color: #effff4; /* Light green background */
+    color: #35A700; /* Dark green text */
+    padding: 10px 20px;
+    border-radius: 24px;
+    border: 2px solid #35A700; /* Green border */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .category-btn:hover {
+    background-color: #35A700; /* Darker green background on hover */
+    color: #fff; /* White text on hover */
+  }
+  
+  .imageBanks-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* Allows logos to wrap on small screens */
+    margin-bottom: 32px;
+  }
+  
+  .imageBanks {
+    max-width: 100px; /* Set a max width for logos */
+    margin: 0 15px; /* Adds space around the logos */
+  }
+  
+  @media (max-width: 768px) {
+    .category-btn {
+      flex-basis: 100%; /* Make buttons take full width on smaller screens */
+    }
+  }
+  
+  .container {
+    max-width: 1200px; /* Adjust the width of the container */
+  }
+  
+  h2 {
+    color: #000; /* Adjust the color as needed */
+    margin-bottom: 20px;
+  }
+  
+  .image-container {
+    perspective: 1000px; /* Creates the depth effect for the 3D card image */
+  }
+  
+  .credit-cards-image {
+    width: 100%; /* Full width of the parent */
+    max-width: 662px; /* Or your desired width */
+    height: auto; /* Keep the aspect ratio */
+    transform: rotateY(10deg); /* Adjust the angle as needed */
+    border-radius: 10px; /* If you want rounded corners on the image */
+  }
+  
+  .main-description {
+    font-size: 1em; /* Adjust the size as needed */
+    color: #333; /* Adjust the color as needed */
+    margin-bottom: 30px;
+  }
+  
+  .function-instance {
+    margin-bottom: 20px;
+  }
+  
+  .function-instance h3 {
+    font-size: 1.2em; /* Adjust the size as needed */
+    color: #000; /* Adjust the color as needed */
+  }
+  
+  .function-instance p {
+    font-size: 1em; /* Adjust the size as needed */
+    color: #666; /* Lighter grey color for the card text */
+  }
+
+  .team-member-card {
+    /* Adjust the styling for the team member card */
+    background-color: #fff; /* White background */
+  }
+  
+  .image-placeholder {
+    width: 140px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    background-color: #eaeaea; /* Placeholder color */
+    margin: 0 auto; /* Center the placeholder */
+    border-radius: 10px; /* Adjust for rounded corners as in the screenshot */
+  }
+  
+  .name-tag {
+    background-color: #35A700; /* Adjust the color as needed */
+    padding: 10px 40px; /* Adjust padding as needed */
+    border-radius: 24px; /* Fully rounded edges */
+    display: inline-block; /* For inline placement */
+    margin-top: -5px; /* Adjust as needed to position above the image */
+    position: relative; /* To position properly */
+    z-index: 1; /* Make sure the tag overlaps the image */
+  }
+  
+  .name-tag h5, .name-tag p {
+    margin: 0; /* Remove default margins */
+    color: white; /* Adjust text color as needed */
+  }
+  
+  /* Adjustments for responsive design */
+  @media (max-width: 768px) {
+    .name-tag {
+      margin-top: 10px; /* Less negative margin on smaller screens */
+    }
+  }
